@@ -20,6 +20,9 @@ import json
 import os
 import re
 import difflib
+# --- ESTA ES LA LÍNEA QUE FALTA ---
+from dotenv import load_dotenv 
+# ----------------------------------
 
 TOKEN = os.getenv("STAFF_TOKEN", "")
 
