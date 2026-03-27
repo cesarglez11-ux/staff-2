@@ -2035,7 +2035,7 @@ async def _check_rachas_diario():
                 dm.description = (
                     f"Tu racha de **{racha_guardada} días consecutivos** se rompió "
                     f"porque no subiste ninguna evidencia ayer.\n\n"
-                    f"> Vuelve al canal de bans y empieza de nuevo. ¡Tú puedes! 💪"
+                    f"> Vuelve a subir evidencias y empieza de nuevo. ¡Tú puedes! 💪"
                 )
                 dm.set_footer(text=FOOTER)
                 await miembro.send(embed=dm)
@@ -2080,7 +2080,7 @@ def _build_dm_inactividad(guild, miembro, horas_sin, canal_inac, test=False):
     inac_ref = canal_inac.mention if canal_inac else f"#{CANAL_INACTIVIDAD}"
     dm.description = (
         f"{miembro.mention}, notamos que llevas {tiempo_str} "
-        f"sin subir evidencias al canal de bans.\n{SEP}"
+        f"sin subir evidencias.\n{SEP}"
     )
     dm.add_field(name="📋  ¿Qué hacer?", value=(
         f"> Si estás **inactivo o ausente**, avísalo en {inac_ref}.\n"
