@@ -35,14 +35,16 @@ CANAL_INACTIVIDAD  = "📬│inactividad"
 CANAL_REUNIONES    = "💼│reuniones"
 CANAL_BANS         = "🚫│bans"
 CANAL_PUNTOS       = "🔥│puntos"
-CANAL_RACHAS       = "🏅│rachas"          # ← NUEVO: canal de rachas
+CANAL_RACHAS       = "🏅│rachas"    
+REUNIONES_FILE = "reuniones_data.json"# ← NUEVO: canal de rachas
 
 SANCIONES_FILE    = "sanciones_data.json"
 NOTAS_FILE        = "notas_data.json"
 PUNTOS_FILE       = "puntos_data.json"
 SOTW_FILE         = "sotw_data.json"
 BANS_CACHE_FILE   = "bans_cache.json"
-RACHAS_FILE       = "rachas_data.json"   # ← NUEVO
+RACHAS_FILE       = "rachas_data.json"   
+REUNIONES_FILE = "reuniones_data.json"# ← NUEVO
 
 # Cache en memoria: {canal_id: [(autor_id, texto, timestamp), ...]}
 _bans_recientes: dict[int, list] = {}
